@@ -4,11 +4,6 @@
 
 A CLI tool for scrubbing sensitive data from files.
 
-**Version:** 0.1.0
-**Author:** volker schwaberow <volker@schwaberow.de>
-**Homepage:** [https://schwaberow.de](https://schwaberow.de)
-**Repository:** [https://github.com/vschwaberow/rustscrub](https://github.com/vschwaberow/rustscrub)
-
 ## Description
 
 # rustscrub

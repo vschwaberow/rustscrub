@@ -4,14 +4,6 @@
 
 A CLI tool for scrubbing sensitive data from files.
 
-## Description
-
-# rustscrub
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-A CLI tool for scrubbing sensitive data from files.
-
 **Version:** 0.1.0
 **Author:** volker schwaberow <volker@schwaberow.de>
 **Homepage:** [https://schwaberow.de](https://schwaberow.de)

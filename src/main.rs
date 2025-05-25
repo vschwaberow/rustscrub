@@ -351,19 +351,19 @@ fn main() -> Result<(), String> {
         match detect_header(input_path) {
             Ok((detected_header_lines, preview)) => {
                 if detected_header_lines > 0 {
-                    println!("Automatisch einen Header mit {} Zeilen erkannt:", detected_header_lines);
+                    println!("Automatically detected a header with {} lines:", detected_header_lines);
                     println!("\n{}\n", preview);
                     
-                    if ask_yes_no_question("Soll dieser Bereich als Header behandelt werden (Kommentare erhalten)?") {
+                    if ask_yes_no_question("Should this section be treated as a header (preserve comments)?") {
                         args.header_lines = detected_header_lines;
-                        println!("Header wird mit {} Zeilen gesetzt.", args.header_lines);
+                        println!("Header will be set to {} lines.", args.header_lines);
                     } else {
-                        println!("Header-Erkennung ignoriert. Verarbeitung der gesamten Datei.");
+                        println!("Header detection ignored. Processing the entire file.");
                     }
                 }
             },
             Err(e) => {
-                eprintln!("Warnung: Header-Erkennung fehlgeschlagen: {}", e);
+                eprintln!("Warning: Header detection failed: {}", e);
             }
         }
     }

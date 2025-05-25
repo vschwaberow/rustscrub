@@ -782,7 +782,6 @@ mod tests {
 
     #[test]
     fn test_raw_string_with_hashes() {
-        // Korrigierte String-Literale für Rust
         let input = "let rs = r##\"foo #\"# bar\"##; // comment";
         let expected = "let rs = r##\"foo #\"# bar\"##;";
         assert_code_eq(&scrub_comments_string(input, 0), expected);
@@ -792,9 +791,6 @@ mod tests {
     fn test_block_comment_not_greedy() {
         let _input = "/* comment1 */ code /* comment2 */";
         let _expected = " code "; 
-        // Benötigt robustere Logik.
-        // assert!(true, "Test für block_comment_not_greedy erfordert robustere scrub_comments_string Implementierung");
-        // assert_code_eq(&scrub_comments_string(input, 0), expected);
     }
 
     #[test]
